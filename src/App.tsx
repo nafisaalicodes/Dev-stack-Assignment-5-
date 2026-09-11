@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react"
-import technologiesData from "./data/technologies.json"
+
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import TechnologyList from "./components/TechnologyList"
+import YourStack from "./components/YourStack"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+import Footer from "./components/Footer"
 
 type Technology = {
   id: string
@@ -16,33 +21,30 @@ type Technology = {
 
 function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([])
+  
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTechnologies(technologiesData)
+     fetch("/data/technologies.json")
+    .then((response) => response.json())
+    .then((data) => {
+    setTechnologies(data)
     setLoading(false)
+       })
   }, [])
 
   if (loading) {
     return <h1>Loading technologies...</h1>
+    
   }
 
   return (
     <>
       <Navbar />
-       <Hero />
-
-      <main>
-        <h1 className="text-4xl font-bold text-center mt-20">
-          Dev Stack
-        </h1>
-
-        {technologies.map((technology) => (
-          <div key={technology.id}>
-            <h2>{technology.name}</h2>
-          </div>
-        ))}
-      </main>
+      <Hero />
+        <Footer />
+      
+    
     </>
   )
 }
