@@ -10,7 +10,7 @@ function Hero() {
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Build Your Ideal
-              <span className="block bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="block brand-gradient-text">
                 Development Stack
               </span>
             </h1>
@@ -23,7 +23,7 @@ function Hero() {
 
             <div className="flex flex-wrap gap-4 mt-8">
 
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold">
+              <button className="brand-gradient text-white px-6 py-3 rounded-lg font-semibold">
                 Explore Technologies
               </button>
 

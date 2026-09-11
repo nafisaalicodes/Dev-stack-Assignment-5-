@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import TechnologyCard from "./components/TechnologyCard"
@@ -38,21 +37,29 @@ function App() {
     )
 
     if (alreadyAdded) {
-      alert("This technology is already in your stack!")
+      toast.warning("This technology is already in your stack!")
       return
     }
 
     setStack([...stack, technology])
+    toast.success(`${technology.name} added to your stack!`)
   }
 
   const handleRemove = (id: string) => {
-    setStack(
-      stack.filter((technology) => technology.id !== id)
-    )
-  }
+  const technology = stack.find(
+    (item) => item.id === id
+  )
+
+  setStack(
+    stack.filter((technology) => technology.id !== id)
+  )
+
+  toast.info(`${technology?.name} removed from your stack!`)
+}
 
   const handleRemoveAll = () => {
     setStack([])
+    toast.info("All technologies removed from your stack!")
   }
 
   if (loading) {
@@ -68,7 +75,7 @@ function App() {
         <div className="text-left mb-10">
   <h2 className="text-3xl md:text-4xl font-bold">
     Explore the{" "}
-    <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+    <span className="brand-gradient-text">
       Technologies
     </span>
   </h2>
@@ -116,7 +123,7 @@ function App() {
       </main>
 
       <Footer />
-      
+        <ToastContainer />
     
     </>
   )

@@ -23,15 +23,15 @@ function Footer() {
             </p>
 
             <div className="flex gap-4 mt-6">
-              <a href="#" className="text-gray-500 hover:text-white">
+              <a href="#" className="text-gray-800 hover:text-white">
                 GitHub
               </a>
 
-              <a href="#" className="text-gray-500 hover:text-white">
+              <a href="#" className="text-gray-800 hover:text-white">
                 Twitter
               </a>
 
-              <a href="#" className="text-gray-500 hover:text-white">
+              <a href="#" className="text-gray-800 hover:text-white">
                 LinkedIn
               </a>
             </div>

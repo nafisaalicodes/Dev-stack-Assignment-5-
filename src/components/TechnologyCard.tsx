@@ -65,7 +65,6 @@ function TechnologyCard({
       {/* Add Button */}
       <button
         onClick={() => onAdd(technology)}
-        disabled={isAdded}
         className="w-full mt-5 bg-black text-white py-2 rounded-lg disabled:bg-gray-400"
       >
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}
