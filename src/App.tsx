@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import technologiesData from "./data/technologies.json"
+import Navbar from "./components/Navbar"
 
 type Technology = {
   id: string
@@ -26,15 +27,21 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Dev Stack</h1>
+    <>
+      <Navbar />
 
-      {technologies.map((technology) => (
-        <div key={technology.id}>
-          <h2>{technology.name}</h2>
-        </div>
-      ))}
-    </div>
+      <main>
+        <h1 className="text-4xl font-bold text-center mt-20">
+          Dev Stack
+        </h1>
+
+        {technologies.map((technology) => (
+          <div key={technology.id}>
+            <h2>{technology.name}</h2>
+          </div>
+        ))}
+      </main>
+    </>
   )
 }
 
