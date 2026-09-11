@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import technologiesData from "./data/technologies.json"
 import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
 type Technology = {
   id: string
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
       <Navbar />
+       <Hero />
 
       <main>
         <h1 className="text-4xl font-bold text-center mt-20">
