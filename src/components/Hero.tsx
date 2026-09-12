@@ -6,7 +6,7 @@ function Hero() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
           {/* Left Content */}
-          <div>
+          <div className="text-center md:text-left">
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Build Your Ideal
@@ -15,19 +15,19 @@ function Hero() {
               </span>
             </h1>
 
-            <p className="text-gray-600 text-lg mt-6 max-w-xl">
+            <p className="text-gray-600 text-lg mt-6 max-w-xl mx-auto md:mx-0">
               Explore Frontend,Backend,database and data options,
               Compare them step by step, and put together the stack that fits your
               next project. 
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-8">
+            <div className="flex  gap-2 mt-8">
 
-              <button className="brand-gradient text-white px-6 py-3 rounded-lg font-semibold">
+              <button className="brand-gradient text-white px-3 py-3 rounded-lg font-semibold flex-1 whitespace-nowrap">
                 Explore Technologies
               </button>
 
-              <button className="border border-gray-300 px-6 py-3 rounded-lg font-semibold">
+              <button className="border border-gray-300 px-3 py-3 rounded-lg font-semibold flex-1 ">
                 Learn More
               </button>
 
@@ -41,7 +41,7 @@ function Hero() {
             <img
               src="/assets/banner-stack.png"
               alt="Developer working with technology"
-              className="w-full max-w-lg"
+              className="w-full max-w-md md:max-w-lg"
             />
 
           </div>
