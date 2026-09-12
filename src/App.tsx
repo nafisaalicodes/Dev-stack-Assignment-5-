@@ -80,7 +80,7 @@ function App() {
     </span>
   </h2>
 
-  <p className="text-gray-500 mt-3">
+  <p className="text-gray-500 mt-3 text-sm sm:text-base whitespace-nowrap">
     Pick one technology per category to build your ideal stack.
   </p>
 </div>

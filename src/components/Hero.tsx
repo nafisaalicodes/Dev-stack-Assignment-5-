@@ -1,12 +1,12 @@
 function Hero() {
   return (
     <section className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
 
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid min-w-0 md:grid-cols-2 gap-10 items-center">
 
           {/* Left Content */}
-          <div className="text-center md:text-left">
+          <div className="min-w-0 text-center md:text-left">
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Build Your Ideal
@@ -36,12 +36,12 @@ function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-center">
+          <div className="min-w-0 flex justify-center">
 
             <img
               src="/assets/banner-stack.png"
               alt="Developer working with technology"
-              className="w-full max-w-md md:max-w-lg"
+              className="w-full max-w-lg"
             />
 
           </div>
