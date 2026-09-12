@@ -23,7 +23,7 @@ function YourStack({
   return (
     <aside className="border border-gray-200 rounded-2xl p-5 bg-white">
 
-      {/* Heading */}
+     
       <div className="mb-4">
         <h2 className="text-xl font-bold">
           Your Stack
@@ -35,7 +35,7 @@ function YourStack({
         </p>
       </div>
 
-      {/* Empty State */}
+      
       {stack.length === 0 && (
         <div className="border-2 border-dashed border-gray-200 rounded-xl p-8 text-center mt-4">
           <p className="text-gray-400 text-sm">
@@ -44,7 +44,7 @@ function YourStack({
         </div>
       )}
 
-      {/* Stack Items */}
+     
       {stack.length > 0 && (
         <div className="flex flex-col gap-3 mt-4">
 
@@ -79,7 +79,7 @@ function YourStack({
             </div>
           ))}
 
-          {/* Remove All */}
+         
           <button
             onClick={onRemoveAll}
             className="w-full border border-red-500 text-red-500 py-2 rounded-lg mt-3"

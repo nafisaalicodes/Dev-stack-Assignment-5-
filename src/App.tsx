@@ -87,7 +87,7 @@ function App() {
 
         <div className="grid lg:grid-cols-4 gap-6">
 
-          {/* Technology Cards */}
+        
           <div className="lg:col-span-3">
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,7 +107,7 @@ function App() {
 
           </div>
 
-          {/* Your Stack */}
+        
           <div className="lg:col-span-1">
 
             <YourStack

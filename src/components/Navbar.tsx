@@ -7,10 +7,10 @@ function Navbar() {
     <nav className="sticky top-0 z-50 w-full overflow-x-hidden  border-b border-gray-100 bg-white">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
         
-        {/* Desktop */}
+        
         <div className="hidden h-14 items-center justify-between md:flex">
           
-          {/* Logo */}
+          
           <a href="#" className="flex items-center gap-2">
             <div className="brand-gradient flex h-7 w-7 items-center justify-center rounded-md text-xs font-bold text-white">
               DS
@@ -21,7 +21,7 @@ function Navbar() {
             </span>
           </a>
 
-          {/* Links */}
+          
           <div className="flex items-center gap-7 text-xs text-gray-600">
             <a href="#" className="text-pink-500">
               Home
@@ -44,7 +44,6 @@ function Navbar() {
             </a>
           </div>
 
-          {/* Buttons */}
           <div className="flex items-center gap-4">
             <button className="text-xs text-gray-600">
               Sign In
@@ -56,7 +55,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile */}
+        
         <div className="flex h-14 items-center justify-between gap-2 md:hidden">
           
           <button
@@ -87,7 +86,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        
         {menuOpen && (
           <div className="border-t py-4 md:hidden">
             <div className="flex flex-col gap-4 text-sm text-gray-600">

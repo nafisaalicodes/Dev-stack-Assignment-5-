@@ -23,7 +23,7 @@ function TechnologyCard({
   return (
     <div className="border border-gray-200 rounded-2xl p-5 bg-white">
 
-      {/* Icon + Badge */}
+      
       <div className="flex items-center justify-between">
         <img
           src={technology.icon}
@@ -36,12 +36,12 @@ function TechnologyCard({
         </span>
       </div>
 
-      {/* Name */}
+      
       <h2 className="text-xl font-bold mt-5">
         {technology.name}
       </h2>
 
-      {/* Description */}
+      
       <p className="text-gray-500 mt-2 min-h-[48px]">
         {technology.description}
       </p>
@@ -62,7 +62,7 @@ function TechnologyCard({
 
 </div>
 
-      {/* Add Button */}
+      
       <button
         onClick={() => onAdd(technology)}
         className="w-full mt-5 bg-black text-white py-2 rounded-lg disabled:bg-gray-400"

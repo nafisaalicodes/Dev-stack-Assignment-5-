@@ -5,7 +5,7 @@ function Hero() {
 
         <div className="grid min-w-0 md:grid-cols-2 gap-10 items-center">
 
-          {/* Left Content */}
+        
           <div className="min-w-0 text-center md:text-left">
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -35,7 +35,6 @@ function Hero() {
 
           </div>
 
-          {/* Right Image */}
           <div className="min-w-0 flex justify-center">
 
             <img

@@ -6,7 +6,7 @@ function Footer() {
 
         <div className="grid md:grid-cols-4 gap-10">
 
-          {/* Brand */}
+        
           <div className="text-center md:text-left">
             <a
               href="#"
@@ -54,7 +54,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Product */}
+          
           <div className="hidden md:block">
             <h3 className="font-semibold text-lg">Product</h3>
 
@@ -65,7 +65,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Company */}
+       
           <div className="hidden md:block">
             <h3 className="font-semibold text-lg">Company</h3>
 
@@ -76,7 +76,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Legal */}
+          
           <div className="hidden md:block">
             <h3 className="font-semibold text-lg">Legal</h3>
 
@@ -88,7 +88,7 @@ function Footer() {
 
         </div>
 
-        {/* Bottom Bar */}
+        
         <div className="border-t border-gray-200 mt-10 pt-6 flex items-center justify-between gap-2 text-gray-400 text-xs whitespace-nowrap">
 
           <p>
