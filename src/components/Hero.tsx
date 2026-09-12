@@ -1,3 +1,4 @@
+import picture from "../assets/banner-stack.png";
 function Hero() {
   return (
     <section className="bg-gray-50 py-20">
@@ -37,12 +38,11 @@ function Hero() {
 
           <div className="min-w-0 flex justify-center">
 
-            <img
-              src="/assets/banner-stack.png"
-              alt="Developer working with technology"
-              className="w-full max-w-lg"
-            />
-
+          <img 
+           src={picture} 
+           alt="Developer working with technology" 
+           className="w-full max-w-lg" 
+          />
           </div>
 
         </div>

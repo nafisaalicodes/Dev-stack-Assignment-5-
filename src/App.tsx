@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import Footer from "./components/Footer"
 
+
 type Technology = {
   id: string
   name: string
